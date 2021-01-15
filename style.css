@@ -35,11 +35,10 @@ body {
     box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
 }
 
-.buttons {}
 
 .operators {}
 
-.operators button {
+.operators div {
     display: inline-block;
     border: 1px solid #bbb;
     border-radius: 1px;
@@ -52,14 +51,14 @@ body {
     transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
 }
 
-.operators button:hover {
+.operators div:hover {
     background-color: #ddd;
     -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
     border-color: #aaa;
 }
 
-.operators button:active {
+.operators div:active {
     font-weight: bold;
 }
 
@@ -67,7 +66,7 @@ body {
     display: inline-block;
 }
 
-.numbers button {
+.numbers div {
     display: inline-block;
     border: 1px solid #ddd;
     border-radius: 1px;
@@ -80,24 +79,24 @@ body {
     transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
 }
 
-.numbers button:hover {
+.numbers div:hover {
     background-color: #f1f1f1;
     -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
     border-color: #bbb;
 }
 
-.numbers button:active {
+.numbers div:active {
     font-weight: bold;
 }
 
-button.equal {
+div.equal {
     display: inline-block;
     border: 1px solid #3079ED;
     border-radius: 1px;
     width: 17%;
     text-align: center;
-    padding: 95px 10px;
+    padding: 127px 10px;
     margin: 10px 6px 10px 0;
     vertical-align: top;
     cursor: pointer;
@@ -106,13 +105,13 @@ button.equal {
     transition: all .2s ease-in-out;
 }
 
-button.equal:hover {
+div.equal:hover {
     background-color: #307CF9;
     -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
     border-color: #1857BB;
 }
 
-button.equal:active {
+div.equal:active {
     font-weight: bold;
 }
