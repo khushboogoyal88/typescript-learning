@@ -3,7 +3,7 @@ class Calculator {
     currentOperandTextElement: any
     currentOperand: string;
     previousOperand: string;
-    operation: any;
+    operation: string;
     constructor(previousOperandTextElement: any, currentOperandTextElement: any,)  {
         this.previousOperandTextElement = previousOperandTextElement
         this.currentOperandTextElement = currentOperandTextElement
@@ -25,7 +25,7 @@ class Calculator {
         this.currentOperand = this.currentOperand + number
     }
     
-    chooseOperation(operation: any) {
+    chooseOperation(operation: string) {
         if (this.currentOperand === '') return
         if (this.previousOperand !== '') {
             this.compute()
@@ -61,7 +61,7 @@ class Calculator {
         this.previousOperand = ''
     }
     
-    getDisplayNumber(number:any) {
+    getDisplayNumber(number:string) {
         const stringNumber = number.toString()
         const integerDigits = parseFloat(stringNumber.split('.')[0])
         const decimalDigits = stringNumber.split('.')[1]
