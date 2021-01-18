@@ -49,14 +49,13 @@ var Calculator = /** @class */ (function () {
             default:
                 return;
         }
-        this.currentOperand = computation;
+        this.currentOperand = computation.toString();
         this.operation = undefined;
         this.previousOperand = '';
     };
     Calculator.prototype.getDisplayNumber = function (number) {
-        var stringNumber = number.toString();
-        var integerDigits = parseFloat(stringNumber.split('.')[0]);
-        var decimalDigits = stringNumber.split('.')[1];
+        var integerDigits = parseFloat(number.split('.')[0]);
+        var decimalDigits = number.split('.')[1];
         var integerDisplay;
         if (isNaN(integerDigits)) {
             integerDisplay = '';
